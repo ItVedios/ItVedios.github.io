@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Django," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="课程介绍本套课程的目标是从零基础开始，使用Django框架开发企业级的项目。课程知识点全网最详细，项目实战最贴近企业需求。本套课程除了非常详细的讲解Django框架本身的知识点以外，还讲解了web开发中所需要用到的技术，比如有短信验证码、图形验证码、邮件发送、ajax等。更紧随时代潮流加入了第三方分享服务、视频加密播放技术、支付功能等。学完本套课程后，你将独立做出一个具有后台管理系统，并且前端非常">
+<meta name="keywords" content="Django">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超细讲解Django打造大型企业官网">
+<meta property="og:url" content="git@github.com:ItVideos/ItVideos.github.io.git/2018/08/05/后端开发/Python/超细讲解Django打造大型企业官网/index.html">
+<meta property="og:site_name" content="JustDoIt">
+<meta property="og:description" content="课程介绍本套课程的目标是从零基础开始，使用Django框架开发企业级的项目。课程知识点全网最详细，项目实战最贴近企业需求。本套课程除了非常详细的讲解Django框架本身的知识点以外，还讲解了web开发中所需要用到的技术，比如有短信验证码、图形验证码、邮件发送、ajax等。更紧随时代潮流加入了第三方分享服务、视频加密播放技术、支付功能等。学完本套课程后，你将独立做出一个具有后台管理系统，并且前端非常">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://edu-image.nosdn.127.net/311e70f8-b44d-4f73-a82f-0dd5a69c0939.jpg?imageView&quality=100&crop=0_1_1080_606&thumbnail=450y250">
+<meta property="og:image" content="http://edu-image.nosdn.127.net/4f05cc86-11df-4e3e-81aa-4d0544b06b53.jpg">
+<meta property="og:updated_time" content="2018-08-05T01:41:51.707Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="超细讲解Django打造大型企业官网">
+<meta name="twitter:description" content="课程介绍本套课程的目标是从零基础开始，使用Django框架开发企业级的项目。课程知识点全网最详细，项目实战最贴近企业需求。本套课程除了非常详细的讲解Django框架本身的知识点以外，还讲解了web开发中所需要用到的技术，比如有短信验证码、图形验证码、邮件发送、ajax等。更紧随时代潮流加入了第三方分享服务、视频加密播放技术、支付功能等。学完本套课程后，你将独立做出一个具有后台管理系统，并且前端非常">
+<meta name="twitter:image" content="http://edu-image.nosdn.127.net/311e70f8-b44d-4f73-a82f-0dd5a69c0939.jpg?imageView&quality=100&crop=0_1_1080_606&thumbnail=450y250">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="git@github.com:ItVideos/ItVideos.github.io.git/2018/08/05/后端开发/Python/超细讲解Django打造大型企业官网/"/>
+
+
+
+
+
+  <title>超细讲解Django打造大型企业官网 | JustDoIt</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JustDoIt</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">IT视频教程资源站</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="git@github.com:ItVideos/ItVideos.github.io.git/2018/08/05/后端开发/Python/超细讲解Django打造大型企业官网/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JackChan(QQ2434276084)">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/allen.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JustDoIt">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">超细讲解Django打造大型企业官网</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-05T09:31:02+08:00">
+                2018-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/05/后端开发/Python/超细讲解Django打造大型企业官网/" class="leancloud_visitors" data-flag-title="超细讲解Django打造大型企业官网">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="课程介绍"><a href="#课程介绍" class="headerlink" title="课程介绍"></a>课程介绍</h2><p>本套课程的目标是从零基础开始，使用Django框架开发企业级的项目。课程知识点全网最详细，项目实战最贴近企业需求。本套课程除了非常详细的讲解Django框架本身的知识点以外，还讲解了web开发中所需要用到的技术，比如有短信验证码、图形验证码、邮件发送、ajax等。更紧随时代潮流加入了第三方分享服务、视频加密播放技术、支付功能等。学完本套课程后，你将独立做出一个具有后台管理系统，并且前端非常优美实用的网站。对于从事一份python web开发相关的工作简直轻而易举！还在等什么？赶快来学习吧！ </p>
+<p><img src="http://edu-image.nosdn.127.net/311e70f8-b44d-4f73-a82f-0dd5a69c0939.jpg?imageView&amp;quality=100&amp;crop=0_1_1080_606&amp;thumbnail=450y250" alt=""></p>
+<a id="more"></a>
+<p><img src="http://edu-image.nosdn.127.net/4f05cc86-11df-4e3e-81aa-4d0544b06b53.jpg" alt=""></p>
+<h2 id="课程目录"><a href="#课程目录" class="headerlink" title="课程目录"></a>课程目录</h2><h3 id="章节1-Django预热"><a href="#章节1-Django预热" class="headerlink" title="章节1:Django预热"></a>章节1:Django预热</h3><ul>
+<li>课时1【虚拟环境】为什么需要虚拟环境 </li>
+<li>课时2【虚拟环境】virtualenv创建虚拟环境 </li>
+<li>课时3【虚拟环境】virtualenvwrapper使用 </li>
+<li>课时4【Django预热】URL组成部分详解 </li>
+<li>课时5【Django预热】课程准备工作 </li>
+<li>课时6【Django预热】Django介绍 </li>
+</ul>
+<h3 id="章节2-Django-URL"><a href="#章节2-Django-URL" class="headerlink" title="章节2:Django URL"></a>章节2:Django URL</h3><ul>
+<li>课时7【Django URL】第一个Django项目剖析（1） </li>
+<li>课时8【Django URL】第一个Django项目剖析（2） </li>
+<li>课时9【Django URL】Django的项目规范 </li>
+<li>课时10【Django URL】DEBUG模式详解 </li>
+<li>课时11【Django URL】视图函数介绍 </li>
+<li>课时12【Django URL】URL映射补充 </li>
+<li>课时13【Django URL】url中传递参数给视图函数 </li>
+<li>课时14【Django URL】Django内置的URL转换器 </li>
+<li>课时15【Django URL】urls分层模块化 </li>
+<li>课时16【Django URL】url命名与反转url </li>
+<li>课时17【Django URL】应用命名空间和实例命名空间 </li>
+<li>课时18【Django URL】include函数详解 </li>
+<li>课时19【Django URL】re_path函数详解 </li>
+<li>课时20【Django URL】reverse函数补充 </li>
+<li>课时21【Django URL】自定义path转换器 </li>
+<li>课时22【Django URL】URL映射时指定默认参数 </li>
+</ul>
+<h3 id="章节3-Django模版"><a href="#章节3-Django模版" class="headerlink" title="章节3:Django模版"></a>章节3:Django模版</h3><ul>
+<li>课时23【Django模版】模版介绍 </li>
+<li>课时24【Django模版】模版查找路径配置 </li>
+<li>课时25【Django模版】模版变量使用详解 </li>
+<li>课时26【Django模版】if标签使用详解 </li>
+<li>课时27【Django模板】for标签使用详解 </li>
+<li>课时28【Django模块】with标签使用详解 </li>
+<li>课时29【Django模板】url标签使用详解 </li>
+<li>课时30【Django模板】autoescape标签使用详解 </li>
+<li>课时31【Django模板】verbatim标签使用详解 </li>
+<li>课时32【Django模板】DTL常用过滤器（1） </li>
+<li>课时33【Django模版】DTL常用过滤器（2） </li>
+<li>课时34【Django模板】DTL常用过滤器（3） </li>
+<li>课时35【Django模板】DTL常用过滤器（4） </li>
+<li>课时36【Django模板】DTL常用过滤器（5） </li>
+<li>课时37【Django模板】自定义过滤器步骤详解 </li>
+<li>课时38【Django模板】自定义过滤器实战 </li>
+<li>课时39【Django模版】模版结构优化之include标签详解 </li>
+<li>课时40【Django模版】模版结构优化之继承详解 </li>
+<li>课时41【Django模版】模版中加载静态文件详解 </li>
+</ul>
+<h3 id="章节4-Django数据库"><a href="#章节4-Django数据库" class="headerlink" title="章节4:Django数据库"></a>章节4:Django数据库</h3><ul>
+<li>课时42【Django数据库】数据库操作相关软件和包介绍 </li>
+<li>课时43【Django数据库】Django使用原生SQL语句操作数据库 </li>
+<li>课时44【Django数据库】图书管理系统案例（1） </li>
+<li>课时45【Django数据库】图书管理系统案例（2） </li>
+<li>课时46【Django数据库】ORM模型介绍 </li>
+<li>课时47【Django数据库】创建和映射ORM模型 </li>
+<li>课时48【Django数据库】ORM模型基本的增删改查操作 </li>
+<li>课时49【Django数据库】ORM常用Field详解（1） </li>
+<li>课时50【Django数据库】navie时间和aware时间详解 </li>
+<li>课时51【Django数据库】ORM常用Field详解（2） </li>
+<li>课时52【Django数据库】ORM常用Field详解（3） </li>
+<li>课时53【Django数据库】Field中常用参数详解 </li>
+<li>课时54【Django数据库】Meta类中常见配置 </li>
+<li>课时55【Django数据库】ORM外键使用详解 </li>
+<li>课时56【Django数据库】ORM外键删除操作详解 </li>
+<li>课时57【Django数据库】表关系之一对多 </li>
+<li>课时58【Django数据库】表关系之一对一 </li>
+<li>课时59【Django数据库】表关系之多对多 </li>
+<li>课时60【Django数据库】ORM查询条件详解-准备工作 </li>
+<li>课时61【Django数据库】pycharm连接数据库 </li>
+<li>课时62【Django数据库】ORM查询条件详解-exact和iexact </li>
+<li>课时63【Django数据库】ORM查询条件详解-contains和Icontains </li>
+<li>课时64【Django数据库】ORM查询条件详解-in和关联模型查询 </li>
+<li>课时65【Django数据库】ORM查询条件详解-gt、gte、lt和lte </li>
+<li>课时66【Django数据库】ORM查询条件详解-startswith和endswith </li>
+<li>课时67【Django数据库】ORM查询条件详解-range </li>
+<li>课时68【Django数据库】ORM查询条件详解-date、time、year、week_day等 </li>
+<li>课时69【Django数据库】ORM查询条件详解-isnull和regex </li>
+<li>课时70【Django数据库】ORM聚合函数详解-准备工作 </li>
+<li>课时71【Django数据库】ORM聚合函数详解-Avg </li>
+<li>课时72【Django数据库】ORM聚合函数详解-aggregate和annotate </li>
+<li>课时73【Django数据库】ORM聚合函数详解-Count </li>
+<li>课时74【Django数据库】ORM聚合函数详解-Max和Min </li>
+<li>课时75【Django数据库】ORM聚合函数详解-Sum </li>
+<li>课时76【Django数据库】F表达式详解 </li>
+<li>课时77【Django数据库】Q表达式详解 </li>
+<li>课时78【Django数据库】objects对象所属类原理剖析 </li>
+<li>课时79【Django数据库】QuerySet API详解-filter、exclude、annotate </li>
+<li>课时80【Django数据库】QuerySet API详解-order_by </li>
+<li>课时81【Django数据库】QuerySet API详解-values和values_list </li>
+<li>课时82【Django数据库】QuerySet API详解-all方法 </li>
+<li>课时83【Django数据库】QuerySet API详解-select_related </li>
+<li>课时84【Django数据库】QuerySet API详解-prefetch_related </li>
+<li>课时85【Django数据库】QuerySet API详解-defer和only </li>
+<li>课时86【Django数据库】QuerySet API详解-get方法 </li>
+<li>课时87【Django数据库】QuerySet API详解-create方法 </li>
+<li>课时88【Django数据库】QuerySet API详解-get_or_create和bulk_create </li>
+<li>课时89【Django数据库】QuerySet API详解-count和exists </li>
+<li>课时90【Django数据库】QuerySet API详解-distinct </li>
+<li>课时91【Django数据库】QuerySet API详解-update和delete </li>
+<li>课时92【Django数据库】QuerySet API详解-切片操作 </li>
+<li>课时93【Django数据库】QuerySet API详解-QuerySet转换为SQL的条件 </li>
+<li>课时94【Django数据库】ORM作业讲解-准备工作 </li>
+<li>课时95【Django数据库】ORM作业讲解（1） </li>
+<li>课时96【Django数据库】ORM作业讲解（2） </li>
+<li>课时97【Django数据库】ORM作业讲解（3） </li>
+<li>课时98【Django数据库】ORM迁移详解-migrations命令补充 </li>
+<li>课时99【Django数据库】ORM迁移详解-migrate命令报错解决方案 </li>
+<li>课时100【Django数据库】根据已有的表生成ORM模型详解 </li>
+</ul>
+<h3 id="章节5-Django视图高级"><a href="#章节5-Django视图高级" class="headerlink" title="章节5:Django视图高级"></a>章节5:Django视图高级</h3><ul>
+<li>课时101【Django视图高级】限制请求method装饰器 </li>
+<li>课时102【Django视图高级】重定向详解 </li>
+<li>课时103【Django视图高级】HttpRequest对象讲解 </li>
+<li>课时104【Django视图高级】QueryDict的用法讲解 </li>
+<li>课时105【Django视图高级】HttpResponse对象讲解. </li>
+<li>课时106【Django视图高级】JsonResponse用法详解 </li>
+<li>课时107【Django视图高级】生成和下载csv文件 </li>
+<li>课时108【Django视图高级】大型CSV文件的处理方式 </li>
+<li>课时109【Django视图高级】类视图讲解 </li>
+<li>课时110【Django视图高级】TemplateView讲解 </li>
+<li>课时111【Django视图高级】ListView视图讲解 </li>
+<li>课时112【Django视图高级】Paginator和Page类常用属性和方法 </li>
+<li>课时113【Django视图高级】手动实现普通分页效果 </li>
+<li>课时114【Django视图高级】手动实现通用分页算法 </li>
+<li>课时115【Django视图高级】给类视图添加装饰器 </li>
+<li>课时116【Django视图高级】状态码错误处理 </li>
+</ul>
+<h3 id="章节6-Django表单"><a href="#章节6-Django表单" class="headerlink" title="章节6:Django表单"></a>章节6:Django表单</h3><ul>
+<li>课时117【Django表单】Django中表单的使用方式 </li>
+<li>课时118【Django表单】用表单验证数据是否合法 </li>
+<li>课时119【Django表单】表单中常用的验证器. </li>
+<li>课时120【Django表单】自定义验证字段的方法 </li>
+<li>课时121【Django表单】简化表单错误信息的提取 </li>
+<li>课时122【Django表单】ModelForm用法讲解（1） </li>
+<li>课时123【Django表单】ModelForm用法讲解（2） </li>
+<li>课时124【Django文件上传】文件上传基本流程讲解 </li>
+<li>课时125【Django文件上传】自动处理上传的文件和获取上传文件url </li>
+<li>课时126【Django文件上传】限制上传的文件类型 </li>
+</ul>
+<h3 id="章节7-Memcached缓存系统"><a href="#章节7-Memcached缓存系统" class="headerlink" title="章节7:Memcached缓存系统"></a>章节7:Memcached缓存系统</h3><ul>
+<li>课时127【memcached】memcached介绍 </li>
+<li>课时128【memcached】memcached的安装和参数详解 </li>
+<li>课时129【memcached】telnet操作memcached </li>
+<li>课时130【memcached】Python操作memcached </li>
+<li>课时131【memcached】memcached的安全机制 </li>
+<li>课时132【memcached】在django中使用memcached </li>
+</ul>
+<h3 id="章节8-Cookie和Session"><a href="#章节8-Cookie和Session" class="headerlink" title="章节8:Cookie和Session"></a>章节8:Cookie和Session</h3><ul>
+<li>课时133【Cookie和Session】cookie的工作机制 </li>
+<li>课时134【Cookie和Session】在django中操作cookie </li>
+<li>课时135【Cookie和Session】Session的概念和机制 </li>
+<li>课时136【Cookie和Session】在Django中操作session </li>
+<li>课时137【Cookie和Session】更改Session的存储机制 </li>
+</ul>
+<h3 id="章节9-上下文处理器和中间件"><a href="#章节9-上下文处理器和中间件" class="headerlink" title="章节9:上下文处理器和中间件"></a>章节9:上下文处理器和中间件</h3><ul>
+<li>课时138【上下文处理器】用户系统案例 </li>
+<li>课时139【上下文处理器】用上下文处理器完善用户系统案例 </li>
+<li>课时140【上下文处理器】内置上下文处理器讲解-debug、request、auth </li>
+<li>课时141【上下文处理器】内置上下文处理器讲解-messages </li>
+<li>课时142【上下文处理器】内置上下文处理器讲解-media、static、csrf </li>
+<li>课时143【中间件】中间件原理和定义方式详解 </li>
+<li>课时144【中间件】中间件第三种即将被遗弃的写法 </li>
+<li>课时145【中间件】内置中间件详解-CommonMiddleware </li>
+<li>课时146【中间件】内置中间件详解-GZip、Messages、Security等 </li>
+</ul>
+<h3 id="章节10-安全"><a href="#章节10-安全" class="headerlink" title="章节10:安全"></a>章节10:安全</h3><ul>
+<li>课时147【CSRF攻击】CSRF攻击介绍和原理分析 </li>
+<li>课时148【CSRF攻击】攻击案例-ICBC项目结构搭建 </li>
+<li>课时149【CSRF攻击】攻击案例-ICBC网站登录、注册、转账功能实现 </li>
+<li>课时150【CSRF攻击】攻击案例-装饰器和中间件优化ICBC网站 </li>
+<li>课时151【CSRF攻击】攻击案例-病毒网站实现隐藏转账 </li>
+<li>课时152【CSRF攻击】攻击案例-CSRF防御原理和解决方案 </li>
+<li>课时153【CSRF攻击】Ajax处理CSRF防御 </li>
+<li>课时154【XSS攻击】XSS攻击原理. </li>
+<li>课时155【XSS攻击】XSS攻击防御-普通字符串处理 </li>
+<li>课时156【XSS攻击】XSS攻击防御-富文本字符串处理 </li>
+<li>课时157【ClickJacking攻击】点击劫持攻击实现和防御措施 </li>
+<li>课时158【SQL注入】SQL注入的实现和防御措施 </li>
+</ul>
+<h3 id="章节11-验证和授权"><a href="#章节11-验证和授权" class="headerlink" title="章节11:验证和授权"></a>章节11:验证和授权</h3><ul>
+<li>课时159【验证和授权】验证和授权系统概述 </li>
+<li>课时160【验证和授权】内置User模型的基本使用 </li>
+<li>课时161【验证和授权】扩展User模型-使用Proxy模型 </li>
+<li>课时162【验证和授权】扩展User模型-一对一方式扩展 </li>
+<li>课时163【验证和授权】扩展User模型-继承AbstractUser </li>
+<li>课时164【验证和授权】扩展User模型-继承AbstractBaseUser </li>
+<li>课时165【验证和授权】登录、退出登录以及登录限制案例 </li>
+<li>课时166【验证和授权】权限-添加权限的两种方式 </li>
+<li>课时167【验证和授权】权限-用户和权限相关操作 </li>
+<li>课时168【验证和授权】权限-权限验证装饰器 </li>
+<li>课时169【验证和授权】分组-group、permission、user的操作 </li>
+<li>课时170【验证和授权】补充-在模板中添加权限控制 </li>
+</ul>
+<h3 id="章节12-Redis键值对数据库"><a href="#章节12-Redis键值对数据库" class="headerlink" title="章节12:Redis键值对数据库"></a>章节12:Redis键值对数据库</h3><ul>
+<li>课时171【Redis】Redis概述和使用场景介绍 </li>
+<li>课时172【Redis】Redis的安装以及客户端连接 </li>
+<li>课时173【Redis】Redis的字符串以及过期时间操作 </li>
+<li>课时174【Redis】Redis列表操作 </li>
+<li>课时175【Redis】Redis集合操作 </li>
+<li>课时176【Redis】Redis的哈希操作 </li>
+<li>课时177【Redis】Redis的事务操作 </li>
+<li>课时178【Redis】Redis的发布和订阅操作 </li>
+<li>课时179【Redis】RDB和AOF的两种数据持久化机制 </li>
+<li>课时180【Redis】Redis设置连接密码 </li>
+<li>课时181【Redis】其他机器连接本机redis </li>
+<li>课时182【Redis】Python操作redis </li>
+</ul>
+<h3 id="章节13-项目实战"><a href="#章节13-项目实战" class="headerlink" title="章节13:项目实战"></a>章节13:项目实战</h3><ul>
+<li>课时183【前端环境配置】项目实战演示和环境说明 </li>
+<li>课时184【前端环境配置】nvm和node.js环境配置 </li>
+<li>课时185【前端环境配置】npm使用详解 </li>
+<li>课时186【gulp配置】gulp介绍和安装 </li>
+<li>课时187【gulp配置】gulp创建任务 </li>
+<li>课时188【gulp配置】gulp创建处理css文件任务 </li>
+<li>课时189【gulp配置】gulp给文件重命名 </li>
+<li>课时190【gulp配置】gulp处理JavaScript文件的任务 </li>
+<li>课时191【gulp配置】合并多个文件 </li>
+<li>课时192【gulp配置】创建压缩图片任务 </li>
+<li>课时193【gulp配置】监听文件修改，自动执行任务 </li>
+<li>课时194【gulp配置】修改代码实时刷新浏览器 </li>
+<li>课时195【项目环境搭建】项目环境搭建和安装相应包 </li>
+<li>课时196【项目环境搭建】编写gulpfile.js文件 </li>
+<li>课时197【项目环境搭建】sass语法介绍和转换为css </li>
+<li>课时198【前端首页】导航条实现（1） </li>
+<li>课时199【前端首页】导航条实现（2） </li>
+<li>课时200【前端首页】导航条实现（3） </li>
+<li>课时201【前端首页】主题盒子布局和导航条吸顶效果 </li>
+<li>课时202【前端首页】轮播图布局和样式 </li>
+<li>课时203【前端首页】JS面向对象和实现一次轮播 </li>
+<li>课时204【前端首页】实现自动轮播 </li>
+<li>课时205【前端首页】鼠标hover事件控制轮播图暂停和继续 </li>
+<li>课时206【前端首页】切换轮播图的箭头样式及其显示和隐藏事件 </li>
+<li>课时207【前端首页】轮播图上下切换 </li>
+<li>课时208【前端首页】小圆点结构和样式 </li>
+<li>课时209【前端首页】根据轮播图的个数动态修改小圆点结构和样式 </li>
+<li>课时210【前端首页】小圆点点击事件和自动更新当前选中的小圆点 </li>
+<li>课时211【前端首页】实现自动无限循环轮播 </li>
+<li>课时212【前端首页】左右箭头切换实现循环轮播. </li>
+<li>课时213【前端首页】新闻列表tab栏布局完成 </li>
+<li>课时214【前端首页】新闻列表页布局完成 </li>
+<li>课时215【前端首页】加载更多按钮的布局和样式 </li>
+<li>课时216【前端首页】侧边栏-标题和广告位布局完成 </li>
+<li>课时217【前端首页】侧边栏-关注第三方平台盒子布局和样式 </li>
+<li>课时218【前端首页】侧边栏-热门推荐完成 </li>
+<li>课时219【前端首页】footer布局和样式（1） </li>
+<li>课时220【前端首页】footer布局和样式（2） </li>
+<li>课时221【新闻详情页】样式重构和模块化 </li>
+<li>课时222【新闻详情页】新闻详情标题和作者等信息布局完成 </li>
+<li>课时223【新闻详情页】新闻内容布局完成 </li>
+<li>课时224【新闻详情页】登录和未登录下评论输入框的布局 </li>
+<li>课时225【新闻详情页】评论列表布局完成 </li>
+<li>课时226【课堂首页】课程首页整体布局和样式抽取 </li>
+<li>课时227【课堂首页】课堂导航条完成 </li>
+<li>课时228【课堂首页】课程列表单个课程布局 </li>
+<li>课时229【课堂首页】使用flex实现多个课程自动布局 </li>
+<li>课时230【课堂首页】鼠标hover到课程上的悬浮效果 </li>
+<li>课时231【课堂首页】scss文件重构 </li>
+<li>课时232【课堂详情页】课程详情页整体布局 </li>
+<li>课时233【课程详情页】课程详情页布局（1） </li>
+<li>课时234【课程详情页】课程详情页布局（2） </li>
+<li>课时235【课程详情页】课程详情页布局（3） </li>
+<li>课时236【其他页面】剩余页面代码解析 </li>
+<li>课时237【登录和注册】登录和注册的模态对话框实现 </li>
+<li>课时238【登录和注册】实现关闭和隐藏模态对话框 </li>
+<li>课时239【登录和注册】登录和注册页面切换 </li>
+<li>课时240【登录和注册】登录页面元素布局完成 </li>
+<li>课时241【登录和注册】登录和注册页面完成 </li>
+<li>课时242【后端开发】后端开发准备工作 </li>
+<li>课时243【后端开发】adminlte框架集成和登录页面实现 </li>
+<li>课时244【后端开发】User模型创建 </li>
+<li>课时245【后端开发】登录功能实现（1） </li>
+<li>课时246【后端开发】登录功能实现（2） </li>
+<li>课时247【后端开发】重构Restful API的实现 </li>
+<li>课时248【后端开发】将静态页面改造成Django模板（1） </li>
+<li>课时249【后端开发】将静态页面改造成Django模板（2） </li>
+<li>课时250【前端开发】登录模态对话框和网站的集成 </li>
+<li>课时251【前端开发】登录功能和模态对话框集成 </li>
+<li>课时252【前端开发】toast提示错误消息 </li>
+<li>课时253【后端开发】登录状态更改和退出登录 </li>
+<li>课时254【后端开发】图形验证码的制作和点击更换 </li>
+<li>课时255【后端开发】短信验证码的发送 </li>
+<li>课时256【后端开发】短信验证码与注册页面的集成 </li>
+<li>课时257【后端开发】memcached存储验证码 </li>
+<li>课时258【后端开发】注册功能后台代码完成 </li>
+<li>课时259【后端开发】注册页面前端逻辑完成 </li>
+<li>课时260【后端开发】CMS管理系统访问和限制 </li>
+<li>课时261【后端开发】CMS管理页面主框架搭建 </li>
+<li>课时262【后端开发】新闻发布页面布局完成 </li>
+<li>课时263【后端开发】解决首页下拉菜单的小bug </li>
+<li>课时264【后端开发】新闻分类模板完成 </li>
+<li>课时265【后端开发】添加新闻分类前后台功能完成 </li>
+<li>课时266【后端开发】新闻分类的编辑和删除功能实现 </li>
+<li>课时267【后端开发】新闻分类细节补充（不能错过） </li>
+<li>课时268【后端开发】使用ajax上传缩略图到自己的服务器 </li>
+<li>课时269【后端开发】使用ajax上传图片到七牛云 </li>
+<li>课时270【后端开发】ajax上传图片到七牛细节处理 </li>
+<li>课时271【后端开发】UEditor富文本编辑器的集成 </li>
+<li>课时272【后端开发】发布新闻功能完成 </li>
+<li>课时273【后端开发】将首页新闻列表改成活的数据 </li>
+<li>课时274【后端开发】djangorestframework实现新闻列表功能 </li>
+<li>课时275【后端开发】将JSON数据渲染成html页面 </li>
+<li>课时276【后端开发】给arttemplate添加时间处理过滤器 </li>
+<li>课时277【后端开发】切换分类异步加载文章 </li>
+<li>课时278【后端开发】新闻详情页完成 </li>
+<li>课时279【后端开发】新闻查询性能优化 </li>
+<li>课时280【后端开发】django-debug-toolbar使用详解 </li>
+<li>课时281【后端开发】新闻评论后端功能实现 </li>
+<li>课时282【后端开发】新闻评论前端功能实现 </li>
+<li>课时283【后端开发】新闻详情页ORM性能优化 </li>
+<li>课时284【后端开发】自定义login_required限制访问 </li>
+<li>课时285【后端开发】轮播图管理-轮播图页面样式实现 </li>
+<li>课时286【后端开发】轮播图管理-添加轮播图卡片事件 </li>
+<li>课时287【后端开发】轮播图管理-轮播图上传功能完成 </li>
+<li>课时288【后端开发】轮播图管理-轮播图卡片关闭事件 </li>
+<li>课时289【后端开发】轮播图管理-添加轮播图功能完成 </li>
+<li>课时290【后端开发】轮播图管理-异步加载轮播图列表 </li>
+<li>课时291【后端开发】轮播图管理-轮播图删除功能完成 </li>
+<li>课时292【后端开发】轮播图管理-修改轮播图和限制轮播图个数 </li>
+<li>课时293【后端开发】解决移除新增轮播图小bug </li>
+<li>课时294【后端开发】首页轮播图数据修改和bug解决 </li>
+<li>课时295【后端开发】新闻管理-新闻列表和查询条件布局完成 </li>
+<li>课时296【后端开发】新闻管理-实现新闻分页功能 </li>
+<li>课时297【后端开发】时间选择器控件的集成 </li>
+<li>课时298【后端开发】根据时间、标题、分类查询新闻并分页显示 </li>
+<li>课时299【后端开发】将文章发布时间格式化为本地时间 </li>
+<li>课时300【后端开发】编辑新闻功能完成 </li>
+<li>课时301【后端开发】删除新闻功能完成 </li>
+<li>课时302【后端开发】课程管理-发布课程界面和模型完成 </li>
+<li>课时303【后端开发】课程管理-视频云存储讲解 </li>
+<li>课时304【后端开发】课程管理-发布课程功能完成 </li>
+<li>课时305【后端开发】课程管理-视频加密播放实现 </li>
+<li>课时306【后端开发】购买课程-课程订单页面完成 </li>
+<li>课时307【后端开发】购买课程-支付宝和微信支付功能准备工作 </li>
+<li>课时308【后端开发】购买课程-生成课程订单 </li>
+<li>课时309【后端开发】购买课程-配置pycharm同步代码到服务器 </li>
+<li>课时310【后端开发】购买课程-添加数据（选看） </li>
+<li>课时311【后端开发】购买课程-支付宝和微信支付功能完成 </li>
+<li>课时312【后端开发】购买课程-购买课程流程补充 </li>
+<li>课时313【后端开发】付费资讯模型创建 </li>
+<li>课时314【后端开发】付费资讯购买和下载（1） </li>
+<li>课时315【后端开发】付费资讯购买和下载（2） </li>
+</ul>
+<h3 id="章节14-Django项目部署"><a href="#章节14-Django项目部署" class="headerlink" title="章节14:Django项目部署"></a>章节14:Django项目部署</h3><ul>
+<li>课时316【部署】开发机上的准备工作 </li>
+<li>课时317【部署】服务器安装python和虚拟环境 </li>
+<li>课时318【部署】安装ssh、git和mysql </li>
+<li>课时319【部署】生产环境下django项目的配置 </li>
+<li>课时320【部署】uWSGI部署项目 </li>
+<li>课时321【部署】uWSGI配置文件 </li>
+<li>课时322【部署】nginx+uwsgi部署项目 </li>
+<li>课时323【部署】supervisor管理uwsgi进程</li>
+</ul>
+<h2 id="更多教程"><a href="#更多教程" class="headerlink" title="更多教程"></a>更多教程</h2><p>教程不断整理更新中，以上截图仅供参考，如需了解更多视频教程的详细信息请到如下地址查看：</p>
+<p><a href="https://itvideos.github.io/categories/" target="_blank" rel="noopener">教程分类说明</a>：<a href="https://itvideos.github.io/categories/" target="_blank" rel="noopener">https://itvideos.github.io/categories/</a></p>
+<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><p><a href="https://itvideos.github.io/about/" target="_blank" rel="noopener">关于教程、获取方式、温馨提示</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="JackChan(QQ2434276084) 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay-reward-image.jpg" alt="JackChan(QQ2434276084) 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Django/" rel="tag"># Django</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/05/后端开发/Java/Java核心技术36讲/" rel="next" title="极客时间 Java核心技术36讲">
+                <i class="fa fa-chevron-left"></i> 极客时间 Java核心技术36讲
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/allen.jpg"
+                alt="JackChan(QQ2434276084)" />
+            
+              <p class="site-author-name" itemprop="name">JackChan(QQ2434276084)</p>
+              <p class="site-description motion-element" itemprop="description">远方除了远，一无是处！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">98</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">77</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程介绍"><span class="nav-number">1.</span> <span class="nav-text">课程介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#课程目录"><span class="nav-number">2.</span> <span class="nav-text">课程目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#章节1-Django预热"><span class="nav-number">2.1.</span> <span class="nav-text">章节1:Django预热</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节2-Django-URL"><span class="nav-number">2.2.</span> <span class="nav-text">章节2:Django URL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节3-Django模版"><span class="nav-number">2.3.</span> <span class="nav-text">章节3:Django模版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节4-Django数据库"><span class="nav-number">2.4.</span> <span class="nav-text">章节4:Django数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节5-Django视图高级"><span class="nav-number">2.5.</span> <span class="nav-text">章节5:Django视图高级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节6-Django表单"><span class="nav-number">2.6.</span> <span class="nav-text">章节6:Django表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节7-Memcached缓存系统"><span class="nav-number">2.7.</span> <span class="nav-text">章节7:Memcached缓存系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节8-Cookie和Session"><span class="nav-number">2.8.</span> <span class="nav-text">章节8:Cookie和Session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节9-上下文处理器和中间件"><span class="nav-number">2.9.</span> <span class="nav-text">章节9:上下文处理器和中间件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节10-安全"><span class="nav-number">2.10.</span> <span class="nav-text">章节10:安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节11-验证和授权"><span class="nav-number">2.11.</span> <span class="nav-text">章节11:验证和授权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节12-Redis键值对数据库"><span class="nav-number">2.12.</span> <span class="nav-text">章节12:Redis键值对数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节13-项目实战"><span class="nav-number">2.13.</span> <span class="nav-text">章节13:项目实战</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节14-Django项目部署"><span class="nav-number">2.14.</span> <span class="nav-text">章节14:Django项目部署</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多教程"><span class="nav-number">3.</span> <span class="nav-text">更多教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取方式"><span class="nav-number">4.</span> <span class="nav-text">获取方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JackChan(QQ2434276084)</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("N85VKE1O3YBok6Gmhxyq2zYR-gzGzoHsz", "jDziCU2LPGftl1fXWbb1xfG6");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
