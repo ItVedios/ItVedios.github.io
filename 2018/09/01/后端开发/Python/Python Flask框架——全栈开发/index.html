@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python Flask框架," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="课程介绍">
+<meta name="keywords" content="Python Flask框架">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Flask框架——全栈开发">
+<meta property="og:url" content="git@github.com:ItVideos/ItVideos.github.io.git/2018/09/01/后端开发/Python/Python Flask框架——全栈开发/index.html">
+<meta property="og:site_name" content="JustDoIt">
+<meta property="og:description" content="课程介绍">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://edu-image.nosdn.127.net/f0a6e40a-46cf-4e94-b66a-cade4e73b25f.jpg?imageView&quality=100&crop=0_0_879_495&thumbnail=450y250">
+<meta property="og:image" content="https://edu-image.nosdn.127.net/f4b58ccd-2d64-4e18-b09e-c86767c7e1dc.png?imageView&quality=100&type=webp">
+<meta property="og:image" content="https://edu-image.nosdn.127.net/a662fda8-7b31-4a8f-bc64-fe543eafbd5b.png?imageView&quality=100&type=webp">
+<meta property="og:image" content="https://edu-image.nosdn.127.net/41745219-50a5-4f01-8b8e-ff7a11b35118.png?imageView&quality=100&type=webp">
+<meta property="og:updated_time" content="2018-09-01T01:06:01.637Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Flask框架——全栈开发">
+<meta name="twitter:description" content="课程介绍">
+<meta name="twitter:image" content="https://edu-image.nosdn.127.net/f0a6e40a-46cf-4e94-b66a-cade4e73b25f.jpg?imageView&quality=100&crop=0_0_879_495&thumbnail=450y250">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="git@github.com:ItVideos/ItVideos.github.io.git/2018/09/01/后端开发/Python/Python Flask框架——全栈开发/"/>
+
+
+
+
+
+  <title>Python Flask框架——全栈开发 | JustDoIt</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JustDoIt</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">IT视频教程资源站</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="git@github.com:ItVideos/ItVideos.github.io.git/2018/09/01/后端开发/Python/Python Flask框架——全栈开发/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JackChan(QQ2434276084)">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/allen.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JustDoIt">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python Flask框架——全栈开发</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-01T08:58:35+08:00">
+                2018-09-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/01/后端开发/Python/Python Flask框架——全栈开发/" class="leancloud_visitors" data-flag-title="Python Flask框架——全栈开发">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="课程介绍"><a href="#课程介绍" class="headerlink" title="课程介绍"></a>课程介绍</h2><p><img src="https://edu-image.nosdn.127.net/f0a6e40a-46cf-4e94-b66a-cade4e73b25f.jpg?imageView&amp;quality=100&amp;crop=0_0_879_495&amp;thumbnail=450y250" alt=""></p>
+<a id="more"></a>
+<p>本套课程的目标是从零基础开始，使用Flask框架开发企业级的项目。课程中不仅包含了Flask框架本身的知识点，更是站在全栈的角度讲解了如何结合Flask使用ajax完成异步调度，使用redis实现大型网站的缓存优化，使用celery实现邮件的异步发送等。更是紧随时代的脚步加入了企业中必用的第三方服务如短信平台阿里大于，资源管理平台七牛云等。本套课程的项目实战不仅实现了一个前台的论坛，更有强大的CMS管理系统，让你学后立马可以编写公司网站项目！更多介绍请观看介绍视频！</p>
+<h2 id="课程章节"><a href="#课程章节" class="headerlink" title="课程章节"></a>课程章节</h2><p><img src="https://edu-image.nosdn.127.net/f4b58ccd-2d64-4e18-b09e-c86767c7e1dc.png?imageView&amp;quality=100&amp;type=webp" alt=""></p>
+<p><img src="https://edu-image.nosdn.127.net/a662fda8-7b31-4a8f-bc64-fe543eafbd5b.png?imageView&amp;quality=100&amp;type=webp" alt=""></p>
+<p><img src="https://edu-image.nosdn.127.net/41745219-50a5-4f01-8b8e-ff7a11b35118.png?imageView&amp;quality=100&amp;type=webp" alt=""></p>
+<h3 id="章节1-Flask视图和URL"><a href="#章节1-Flask视图和URL" class="headerlink" title="章节1:Flask视图和URL"></a>章节1:Flask视图和URL</h3><ul>
+<li>课时1【虚拟环境】为什么需要虚拟环境</li>
+<li>课时2【虚拟环境】virtualenv创建虚拟环境</li>
+<li>课时3【虚拟环境】virtualenvwrapper使用</li>
+<li>课时4【Flask预热】课程介绍</li>
+<li>课时5【Flask预热】Flask课程准备工作</li>
+<li>课时6【Flask预热】URL组成部分详解</li>
+<li>课时7【Flask预热】web服务器+应用服务器+web应用框架</li>
+<li>课时8【Flask URL】第一个flask程序详解</li>
+<li>课时9【Flask URL】debug模式详解</li>
+<li>课时10【Flask URL】配置文件两种方式详解</li>
+<li>课时11【Flask URL】URL中两种方式传参</li>
+<li>课时12【Flask URL】url_for使用详解</li>
+<li>课时13【Flask URL】自定义URL转换器</li>
+<li>课时14【Flask URL】必会的小细节知识</li>
+<li>课时15【Flask URL】重定向详解</li>
+<li>课时16【Flask URL】视图函数Response返回值详解</li>
+</ul>
+<h3 id="章节2-Jinja2模版"><a href="#章节2-Jinja2模版" class="headerlink" title="章节2:Jinja2模版"></a>章节2:Jinja2模版</h3><ul>
+<li>课时17【Flask模版】Jinja2模版介绍和查找路径</li>
+<li>课时18【Flask模版】模版传参及其技巧</li>
+<li>课时19【Flask模版】模版中使用url_for</li>
+<li>课时20【Flask模版】过滤器基本使用</li>
+<li>课时21【Flask模版】default过滤器详解</li>
+<li>课时22【Flask模版】常用过滤器讲解</li>
+<li>课时23【Flask模版】自定义过滤器</li>
+<li>课时24【Flask模版】自定义时间处理过滤器案例</li>
+<li>课时25【Flask模版】if语句详解</li>
+<li>课时26【Flask模版】for循环语句详解</li>
+<li>课时27【Flask模版】九九乘法表案例</li>
+<li>课时28【Flask模版】宏的概念和基本使用</li>
+<li>课时29【Flask模版】宏的导入和注意事项</li>
+<li>课时30【Flask模版】include标签使用详解</li>
+<li>课时31【Flask模版】set和with语句以及模版中定义变量</li>
+<li>课时32【Flask模版】加载静态文件</li>
+<li>课时33【Flask模版】模版继承详解</li>
+<li>课时34【Flask模版】豆瓣微信小程序案例（1）</li>
+<li>课时35【Flask模版】豆瓣微信小程序案例（2）</li>
+<li>课时36【Flask模版】豆瓣微信小程序案例（3）</li>
+</ul>
+<h3 id="章节3-Flask视图高级"><a href="#章节3-Flask视图高级" class="headerlink" title="章节3:Flask视图高级"></a>章节3:Flask视图高级</h3><ul>
+<li>课时37【Flask视图高级】add_url_rule和app.route原理剖析</li>
+<li>课时38【Flask视图高级】标准类视图及其使用场景</li>
+<li>课时39【Flask视图高级】基于调度方法的类视图</li>
+<li>课时40【Flask视图高级】类视图中使用装饰器</li>
+<li>课时41【Flask视图高级】蓝图的基本使用</li>
+<li>课时42【Flask视图高级】蓝图中模版文件寻找规则</li>
+<li>课时43【Flask视图高级】蓝图中静态文件寻找规则</li>
+<li>课时44【Flask视图高级】url_for反转蓝图注意事项</li>
+<li>课时45【Flask视图高级】子域名实现详解</li>
+</ul>
+<h3 id="章节4-Flask数据库"><a href="#章节4-Flask数据库" class="headerlink" title="章节4:Flask数据库"></a>章节4:Flask数据库</h3><ul>
+<li>课时46【Flask数据库】安装MySQL以及注意事项</li>
+<li>课时47【Flask数据库】SQLAlchemy连接数据库</li>
+<li>课时48【Flask数据库】ORM介绍</li>
+<li>课时49【Flask数据库】定义ORM模型并将其映射到数据库中</li>
+<li>课时50【Flask数据库】SQLAlchemy对数据的增删改查操作</li>
+<li>课时51【Flask数据库】SQLAlchemy属性常用数据类型详解</li>
+<li>课时52【Flask数据库】Column常用参数</li>
+<li>课时53【Flask数据库】query函数可查询的数据</li>
+<li>课时54【Flask数据库】filter方法常用过滤条件</li>
+<li>课时55【Flask数据库】外键及其四种约束讲解</li>
+<li>课时56【Flask数据库】ORM层外键和一对多关系</li>
+<li>课时57【Flask数据库】一对一关系实现</li>
+<li>课时58【Flask数据库】多对多关系实现</li>
+<li>课时59【Flask数据库】ORM层面删除数据注意事项</li>
+<li>课时60【Flask数据库】relationship方法中的cascade参数详解（1）</li>
+<li>课时61【Flask数据库】relationship方法中的cascade参数详解（2）</li>
+<li>课时62【Flask数据库】三种排序方式详解</li>
+<li>课时63【Flask数据库】limit、offset以及切片操作</li>
+<li>课时64【Flask数据库】数据查询懒加载技术</li>
+<li>课时65【Flask数据库】group_by和having子句</li>
+<li>课时66【Flask数据库】join实现复杂查询</li>
+<li>课时67【Flask数据库】subquery实现复杂查询</li>
+<li>课时68【Flask数据库】Flask-SQLAlchemy的使用详解</li>
+<li>课时69【Flask数据库】alembic数据库迁移工具基本使用</li>
+<li>课时70【Flask数据库】alembic常用命令和经典错误解决办法</li>
+<li>课时71【Flask数据库】Flask-SQLAlchemy下alembic的配置</li>
+<li>课时72【Flask数据库】Flask-Script详细讲解</li>
+<li>课时73【Flask数据库】项目结构重构</li>
+<li>课时74【Flask数据库】Flask-Migrate详细讲解</li>
+<li>课时75【Flask数据库】Flask-Migrate注意事项</li>
+</ul>
+<h3 id="章节5-Flask知识点补充"><a href="#章节5-Flask知识点补充" class="headerlink" title="章节5:Flask知识点补充"></a>章节5:Flask知识点补充</h3><ul>
+<li>课时76【WTForms】WTForms表单验证基本使用</li>
+<li>课时77【WTForms】WTForms常用验证器</li>
+<li>课时78【WTForms】自定义表单验证器</li>
+<li>课时79【WTForms】使用WTForms渲染模版</li>
+<li>课时80【Flask文件上传】上传文件以及访问上传的文件</li>
+<li>课时81【Flask文件上传】使用flask_wtf验证上传的文件</li>
+<li>课时82【Flask Cookie】cookie的基本概念</li>
+<li>课时83【Flask Cookie】Flask设置和删除cookie</li>
+<li>课时84【Flask Cookie】Flask设置cookie过期时间</li>
+<li>课时85【Flask Cookie】设置Cookie的有效域名</li>
+<li>课时86【Flask Session】session的基本概念</li>
+<li>课时87【Flask Session】Flask操作session</li>
+<li>课时88【CSRF攻击与防御】CSRF攻击原理</li>
+<li>课时89【CSRF攻击与防御】实战项目-中国工商银行注册功能完成</li>
+<li>课时90【CSRF攻击与防御】实战项目-中国工商银行登录和转账实现</li>
+<li>课时91【CSRF攻击与防御】实战项目-病毒网站使用CSRF漏洞转账</li>
+<li>课时92【CSRF攻击与防御】CSRF防御原理</li>
+<li>课时93【CSRF攻击与防御】Flask中CSRF防御的方法与原理</li>
+<li>课时94【CSRF攻击与防御】AJAX处理CSRF漏洞</li>
+<li>课时95【Flask上下文】Local线程隔离对象</li>
+<li>课时96【Flask上下文】app上下文和request上下文详解</li>
+<li>课时97【Flask上下文】线程隔离的g对象使用详解</li>
+<li>课时98【Flask钩子函数】before_request钩子函数详解</li>
+<li>课时99【Flask钩子函数】context_processor钩子函数详解</li>
+<li>课时100【Flask钩子函数】errorhandler钩子函数详解</li>
+<li>课时101【Flask信号】信号机制及其使用场景详解</li>
+<li>课时102【Flask信号】Flask内置的信号讲解</li>
+<li>课时103【Flask Restful】Restful API规范介绍</li>
+<li>课时104【Flask Restful】Flask-Restful插件的基本使用</li>
+<li>课时105【Flask Restful】Flask-Restful参数验证</li>
+<li>课时106【Flask Restful】Flask-Restful标准化返回参数（1）</li>
+<li>课时107【Flask Restful】Flask-Restful标准化返回参数（2）</li>
+<li>课时108【Flask Restful】Flask-Restful细节强化</li>
+</ul>
+<h3 id="章节6-memcached缓存系统"><a href="#章节6-memcached缓存系统" class="headerlink" title="章节6:memcached缓存系统"></a>章节6:memcached缓存系统</h3><ul>
+<li>课时109【memcached】memcached介绍</li>
+<li>课时110【memcached】memcached的安装和参数详解</li>
+<li>课时111【memcached】telnet操作memcached</li>
+<li>课时112【memcached】Python操作memcached</li>
+<li>课时113【memcached】memcached的安全机制</li>
+</ul>
+<h3 id="章节7-Redis键值对数据库"><a href="#章节7-Redis键值对数据库" class="headerlink" title="章节7:Redis键值对数据库"></a>章节7:Redis键值对数据库</h3><ul>
+<li>课时114【Redis】Redis概述和使用场景介绍</li>
+<li>课时115【Redis】Redis的安装以及客户端连接</li>
+<li>课时116【Redis】Redis的字符串以及过期时间操作</li>
+<li>课时117【Redis】Redis的列表操作</li>
+<li>课时118【Redis】Redis的集合操作</li>
+<li>课时119【Redis】Redis的哈希操作</li>
+<li>课时120【Redis】Redis的事务操作</li>
+<li>课时121【Redis】Redis的发布和订阅操作</li>
+<li>课时122【Redis】RDB和AOF的两种数据持久化机制</li>
+<li>课时123【Redis】Redis设置连接密码</li>
+<li>课时124【Redis】其他机器连接本机redis</li>
+<li>课时125【Redis】Python操作redis</li>
+</ul>
+<h3 id="章节8-Flask企业级论坛实战项目"><a href="#章节8-Flask企业级论坛实战项目" class="headerlink" title="章节8:Flask企业级论坛实战项目"></a>章节8:Flask企业级论坛实战项目</h3><ul>
+<li>课时126【Flask项目实战】实战项目介绍</li>
+<li>课时127【Flask项目实战】项目结构搭建</li>
+<li>课时128【Flask项目实战】cms用户模型定义</li>
+<li>课时129【Flask项目实战】cms后台登录界面完成</li>
+<li>课时130【Flask项目实战】cms后台登录功能完成</li>
+<li>课时131【Flask项目实战】cms后台登录限制</li>
+<li>课时132【Flask项目实战】cms后台模版渲染完成</li>
+<li>课时133【Flask项目实战】cms用户名渲染和注销功能实现</li>
+<li>课时134【Flask项目实战】cms模版抽离和个人信息页面完成</li>
+<li>课时135【Flask项目实战】cms登录页面CSRF保护</li>
+<li>课时136【Flask项目实战】cms后台修改密码界面布局完成</li>
+<li>课时137【Flask项目实战】cms后台修改密码ajax功能完成</li>
+<li>课时138【Flask项目实战】cms后台密码修改服务器逻辑完成</li>
+<li>课时139【Flask项目实战】优化json数据的返回</li>
+<li>课时140【Flask项目实战】sweetalert提示框用法讲解</li>
+<li>课时141【Flask项目实战】sweetalert优化修改密码结果反馈</li>
+<li>课时142【Flask项目实战】修改邮箱界面完成</li>
+<li>课时143【Flask项目实战】Flask-Mail的使用以及邮箱配置</li>
+<li>课时144【Flask项目实战】发送邮箱验证码功能完成</li>
+<li>课时145【Flask项目实战】修改邮箱功能完成</li>
+<li>课时146【Flask项目实战】二进制及其相关运算</li>
+<li>课时147【Flask项目实战】权限和角色模型定义</li>
+<li>课时148【Flask项目实战】封装权限判断功能</li>
+<li>课时149【Flask项目实战】客户端权限验证功能完成</li>
+<li>课时150【Flask项目实战】服务端权限验证功能完成</li>
+<li>课时151【Flask项目实战】前台用户模型创建（1）</li>
+<li>课时152【Flask项目实战】前台用户模型创建（2）</li>
+<li>课时153【Flask项目实战】注册界面完成</li>
+<li>课时154【Flask项目实战】图形验证码生成技术详解</li>
+<li>课时155【Flask项目实战】点击更换图形验证码</li>
+<li>课时156【Flask项目实战】发送短信验证码（过时了）</li>
+<li>课时157【Flask项目实战】发送短信验证码（新版的）</li>
+<li>课时158【Flask项目实战】注册页面对接短信验证码接口</li>
+<li>课时159【Flask项目实战】短信验证码接口加密和js代码混淆</li>
+<li>课时160【Flask项目实战】缓存验证码</li>
+<li>课时161【Flask项目实战】注册功能前端逻辑代码完成</li>
+<li>课时162【Flask项目实战】注册功能后台逻辑代码完成</li>
+<li>课时163【Flask项目实战】注册完成跳转回上一个页面</li>
+<li>课时164【Flask项目实战】登录界面完成</li>
+<li>课时165【Flask项目实战】登录功能完成</li>
+<li>课时166【Flask项目实战】首页导航条实现和代码抽离</li>
+<li>课时167【Flask项目实战】首页轮播图实现</li>
+<li>课时168【Flask项目实战】cms轮播图管理页面布局</li>
+<li>课时169【Flask项目实战】cms添加轮播图的模态对话框制作</li>
+<li>课时170【Flask项目实战】cms添加轮播图后台逻辑代码完成</li>
+<li>课时171【Flask项目实战】cms添加轮播图前台逻辑代码完成</li>
+<li>课时172【Flask项目实战】cms编辑和删除轮播图功能完成</li>
+<li>课时173【Flask项目实战】七牛云存储介绍</li>
+<li>课时174【Flask项目实战】七牛JS和Python的SDK使用</li>
+<li>课时175【Flask项目实战】轮播图上传图片功能完成</li>
+<li>课时176【Flask项目实战】首页动态获取轮播图数据</li>
+<li>课时177【Flask项目实战】板块管理（1）</li>
+<li>课时178【Flask项目实战】板块管理（2）</li>
+<li>课时179【Flask项目实战】UEditor编辑器集成以及配置上传文件到七牛</li>
+<li>课时180【Flask项目实战】发布帖子后台逻辑完成</li>
+<li>课时181【Flask项目实战】发布帖子界面布局完成</li>
+<li>课时182【Flask项目实战】发布帖子前端逻辑代码完成</li>
+<li>课时183【Flask项目实战】首页帖子列表布局完成</li>
+<li>课时184【Flask项目实战】帖子分页技术实现</li>
+<li>课时185【Flask项目实战】帖子板块过滤显示</li>
+<li>课时186【Flask项目实战】帖子详情页布局</li>
+<li>课时187【Flask项目实战】评论布局和功能实现（1）</li>
+<li>课时188【Flask项目实战】评论布局和功能实现（2）</li>
+<li>课时189【Flask项目实战】帖子加精和取消加精功能完成</li>
+<li>课时190【Flask项目实战】帖子按照发布时间和评论数量等排序</li>
+<li>课时191【Flask项目实战】celery实现异步任务</li>
+<li>课时192【Flask项目实战】Flask+Celery实现邮件和短信异步发送</li>
+</ul>
+<h3 id="章节9-Python-web开发核心技术"><a href="#章节9-Python-web开发核心技术" class="headerlink" title="章节9:Python web开发核心技术"></a>章节9:Python web开发核心技术</h3><ul>
+<li>课时193【ajax技术】Flask和Ajax技术</li>
+<li>课时194【部署】开发机上的准备工作</li>
+<li>课时195【部署】服务器上安装vim、mysql、memcached等</li>
+<li>课时196【部署】服务器上安装Python环境、git、虚拟环境等</li>
+<li>课时197【部署】项目运行环境配置</li>
+<li>课时198【部署】uwsg部署项目</li>
+<li>课时199【部署】nginx和uwsgi部署项目</li>
+<li>课时200【部署】supervisor管理uwsgi进程需购买观看</li>
+<li>课时201【部署】用supervisor管理celery进程</li>
+</ul>
+<h2 id="更多教程"><a href="#更多教程" class="headerlink" title="更多教程"></a>更多教程</h2><p>教程不断整理更新中，以上截图仅供参考，如需了解更多视频教程的详细信息请到如下地址查看：</p>
+<p><a href="https://itvideos.github.io/categories/" target="_blank" rel="noopener">教程分类说明</a>：<a href="https://itvideos.github.io/categories/" target="_blank" rel="noopener">https://itvideos.github.io/categories/</a></p>
+<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><p><a href="https://itvideos.github.io/about/" target="_blank" rel="noopener">关于教程、获取方式、温馨提示</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="JackChan(QQ2434276084) 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay-reward-image.jpg" alt="JackChan(QQ2434276084) 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python-Flask框架/" rel="tag"># Python Flask框架</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/01/前端开发/Node/Node.js开发企业级项目实战/" rel="next" title="Node.js开发企业级项目实战">
+                <i class="fa fa-chevron-left"></i> Node.js开发企业级项目实战
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/allen.jpg"
+                alt="JackChan(QQ2434276084)" />
+            
+              <p class="site-author-name" itemprop="name">JackChan(QQ2434276084)</p>
+              <p class="site-description motion-element" itemprop="description">远方除了远，一无是处！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">105</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">85</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程介绍"><span class="nav-number">1.</span> <span class="nav-text">课程介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#课程章节"><span class="nav-number">2.</span> <span class="nav-text">课程章节</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#章节1-Flask视图和URL"><span class="nav-number">2.1.</span> <span class="nav-text">章节1:Flask视图和URL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节2-Jinja2模版"><span class="nav-number">2.2.</span> <span class="nav-text">章节2:Jinja2模版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节3-Flask视图高级"><span class="nav-number">2.3.</span> <span class="nav-text">章节3:Flask视图高级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节4-Flask数据库"><span class="nav-number">2.4.</span> <span class="nav-text">章节4:Flask数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节5-Flask知识点补充"><span class="nav-number">2.5.</span> <span class="nav-text">章节5:Flask知识点补充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节6-memcached缓存系统"><span class="nav-number">2.6.</span> <span class="nav-text">章节6:memcached缓存系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节7-Redis键值对数据库"><span class="nav-number">2.7.</span> <span class="nav-text">章节7:Redis键值对数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节8-Flask企业级论坛实战项目"><span class="nav-number">2.8.</span> <span class="nav-text">章节8:Flask企业级论坛实战项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节9-Python-web开发核心技术"><span class="nav-number">2.9.</span> <span class="nav-text">章节9:Python web开发核心技术</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多教程"><span class="nav-number">3.</span> <span class="nav-text">更多教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取方式"><span class="nav-number">4.</span> <span class="nav-text">获取方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JackChan(QQ2434276084)</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("N85VKE1O3YBok6Gmhxyq2zYR-gzGzoHsz", "jDziCU2LPGftl1fXWbb1xfG6");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
